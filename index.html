@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="app.js" defer></script>
+  </head>
+  <body onload="slider()">
+        <div class="header-container">
+          <div class="slider">
+              <img src="assets/backgorund1.jpg" alt="" id="slideImage">
+          </div>
+            <div class="container-overlay">
+                <div class="navbar">
+                  <div class="logo" onclick="homePage()">
+                    <img src="assets/hotel_48dp_FILL0_wght400_GRAD0_opsz48.png" class="hotel" alt="">
+                    <h1 class="logoText">Logo</h1>
+                  </div>
+                  <div class="list">
+                    <ul class="nav no-search" id="nav-links">
+                      <li class="color-active"><a href="index.html" onclick="homePage()" class="nav-link">Home</a></li>
+                      <li><a href="about.html" class="nav-link">About</a></li>
+                      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                      <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-toggle" id="mobile-menu">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                  </div>
+                  <div class="account">
+                      <button class="login"> <a href="login.html">Login</a></button>
+                      <button class="register"><a href="form.html">Register</a></button>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="text-content">
+                    <p class="lux-living">Luxury living</p>
+                    <h2 class="text-cont">Discover a Brand <br>
+                    Luxurious Hotel</h2>
+                    <button class="btn"><a href="hotel.html">hotels</a></button>
+                    <button class="btn btnn"><a href="login.html">book a lead</a></button>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+  </body>
+</html>

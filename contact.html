@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+    <link rel="stylesheet" href="contact.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="navbar">
+            <div class="logo" onclick="homePage()">
+                <img src="assets/hotel_48dp_FILL0_wght400_GRAD0_opsz48.png" class="hotel" alt="">
+                <h1 class="logoText">Logo</h1>
+            </div>
+            <div class="list">
+              <ul class="nav no-search" id="nav-links">
+                <li class="color-active"><a href="index.html" onclick="homePage()" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="account">
+                <button class="login"> <a href="login.html">Login</a></button>
+                <button class="register"><a href="form.html">Register</a></button>
+            </div>
+        </div>
+        <div class="image-contact">
+            <!-- <img src="assets/room1.jpg" alt="" class="room"> -->
+            <div class="intouch-h2">
+                <h2 class="in-touch">Get in touch</h2>
+            </div>
+        </div>
+        <div class="contain">
+           
+            <div class="icon-sec">
+                <div class="ion-icons">
+                    <span class="material-symbols-outlined">apartment</span>
+                    <div class="office-des">
+                        <p class="office">Office</p>
+                        <p class="office-name">Lorem ipsum dolor sit, amet 
+                            consectetur adipisicing elit.</p>
+                    </div>    
+                </div>
+                <div class="ion-icons bg">
+                    <span class="material-symbols-outlined">language</span>
+                    <div class="office-des">
+                        <p class="office">Website</p>
+                        <p class="office-name">www.hotelgh.net</p>
+                    </div>    
+                </div>
+                <div class="ion-icons">
+                    <span class="material-symbols-outlined">call</span>
+                    <div class="office-des">
+                        <p class="office">Phone</p>
+                        <p class="office-name">+(233 000 000 000)</p>
+                    </div>    
+                </div>
+                <div class="ion-icons bg">
+                    <span class="material-symbols-outlined">mail</span>
+                    <div class="office-des">
+                        <p class="office">Email</p>
+                        <p class="office-name">info@email.com</p>
+                    </div>    
+                </div>
+            </div>
+            
+            <div class="form">
+                <h3 class="request">Make a request! Lets'talk</h3>
+                <form action="">
+                    <div class="form-desc">
+                        <label for="name">Full name</label> <br>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-desc">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-desc">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="number" required>
+                    </div>
+                    <div class="form-desc">
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="bbtn">
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="newsletter">
+                <h4 class="news-h4">newsletter</h4>
+                <div class="news">
+                    <p class="get-notified">Get notified hotel news</p>
+                    <div class="news-input">
+                        <span class="material-symbols-outlined person">person</span>
+                        <input type="email" name="email" id="email" placeholder="yourname@gmail.com">
+                        <span class="material-symbols-outlined send">send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copyright">&copy; 2024 copyright reserved Designed by <span class="dot">DotMond</span></p>
+      </div>
+</body>
+</html>

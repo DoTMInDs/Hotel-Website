@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+}
+#slideImage{
+    width: 100%;
+    height: 100%;
+    animation: transition 3s linear infinite;
+}
+
+@keyframes transition {
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.container-overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px auto;
+}
+.logoText{
+    color: #ffae17;
+    margin-left: 5px;
+    font-family: 'montserrat';
+    font-weight: 700;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.hotel{
+    width: 50px;
+}
+
+
+.menu-toggle{
+    flex-direction: column;
+    display: none;
+    cursor: pointer;
+}
+.menu-toggle .bar{
+    width: 28px;
+    height: 2.5px;
+    background-color: white;
+    margin: 2.5px 0;
+    transition: 0.4s;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    transition: height 0.5s ease-out;
+}
+.nav-link{
+    color: #fefefe;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: 'montserrat';
+    font-weight: 500;
+    transition: color 0.5s;
+}
+.nav-link:hover {
+    background: #ffae17;
+}
+
+.list ul .color-active a{
+    color: #ffae17;
+}
+.list ul .color-active a:hover{
+    color: #fefefe;
+}
+
+.login{
+    background: #ffae17;
+    border: 1px solid #ffae17;
+    padding: 5px 10px;
+    color: #fefefe;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: background 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'montserrat';
+    font-weight: 600;
+}
+.login a{
+    text-decoration: none;
+    color: #fefefe;
+}
+.register a{
+    text-decoration: none;
+    color: #fefefe;
+}
+.login:hover{
+    background: transparent;
+    border: 1px solid #fefefe;
+}
+.register{
+    background: transparent;
+    border: 1px solid #ffae17;
+    padding: 8px 20px;
+    color: #fefefe;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: background 0.5s;
+    cursor: pointer;
+    font-family: 'montserrat';
+    font-weight: 600;
+    display: none;
+}
+
+.register:hover{
+    background: #ffae17;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-content{
+  margin-top: 80px;
+  text-align: center;
+}
+.lux-living{
+    color: #ffae17;
+    letter-spacing: 0.9px;
+    font-size: 14px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-cont{
+    
+    color: #ffffff;
+    font-size: 55px;
+    font-family: 'Montserrat';
+}
+.btn{
+    background: #ffae17;
+    border: 1px solid #ffae17;
+    padding: 8px 20px;
+    color: #fefefe;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: background 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+.btn a{
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: 500;
+}
+.btn:hover{
+    background: transparent;
+    border: 1px solid #fefefe;
+}
+.btnn{
+    background: transparent;
+    border: 1px solid #ffae17;
+    padding: 8px 20px;
+    color: #fefefe;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.btnn:hover{
+    background: #ffae17;
+}
+
+
+/* ------------------------media-querrie------------ */
+
+
+@media only screen and (max-width:900px) {
+    .logoText{
+        color: #ffae17;
+        margin-left: 5px;
+        font-family: 'montserrat';
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .hotel{
+        width: 30px;
+    }
+  
+    .menu-toggle {
+    display: flex;
+   }
+   .link{
+    position: relative;
+   }
+   .nav{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    height: 500px;
+    z-index: 1;
+    padding-top: 50px;
+    transition: height 0.5s;
+   }
+   .nav li{
+    margin-top: 30px;
+   }
+   .nav.showing{
+    display: flex;
+    /* height: 500px; */
+    transition: height 0.5s;
+   }
+   .nav-link {
+    padding: 14px;
+    border-top: 1px solid #444;
+   }
+   .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+   }
+   .change .bar:nth-child(2) {
+    opacity: 0;
+   }
+   .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+   }
+
+   .in-touch{
+    color: #fefefe;
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    }
+
+    .contain{
+        width: 90%;
+       margin: auto;
+       margin-top: 30px;
+    }
+    
+    .icon-sec{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .icon-sec .bg{
+        background-color: #ffb8351c;
+        border-radius: 50px;
+        padding: 8px 20px;
+    }
+    .contain .ion-icons{
+        display: flex;
+        align-items: center;
+    } 
+    .ion-icons span{
+        font-size: 30px;
+        color: #ffae17d0;
+    }
+    .office-des{
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .in-touch{
+        color: #fefefe;
+        font-family: 'montserrat';
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        }
+}
+
+@media screen and (max-width:480px) {
+    textarea{
+        background: #fcfbfb;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        font-family: 'montserrat';
+        color: #222;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+        width: 100%;
+        border-radius: 20px;
+        height: 250px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    form {
+        background-color: #ffb8351c;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+    .form-desc{
+        margin: 0;
+        
+    }
+    .request{
+        font-size: 20px;
+        font-family: 'montserrat';
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-cont{
+        color: #ffffff;
+        font-size: 48px;
+        font-family: 'Montserrat';
+    }
+    .lux-living{
+        color: #ffae17;
+        letter-spacing: 0.9px;
+        font-size: 13px;
+        font-family: 'montserrat';
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
